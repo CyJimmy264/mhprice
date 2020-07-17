@@ -1,3 +1,18 @@
 // Place all the styles related to the Price controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+form {
+  label, select, input {
+    margin: 0 8px 0 0;
+  }
+}
+
+#mhc_volume {
+  width: 100px;
+}
+
+#mhc_for_currency {
+  width: 50px;
+  text-align: center;
+}

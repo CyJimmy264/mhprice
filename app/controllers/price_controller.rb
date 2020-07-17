@@ -12,7 +12,7 @@ class PriceController < ApplicationController
   private
 
   def set_form
-    permitted = params.permit(mhc: [:action, :volume, :for_currency])
-    @form = PriceForm.new(permitted[:mhc])
+    params.permit!
+    @form = PriceForm.new(params[:mhc])
   end
 end

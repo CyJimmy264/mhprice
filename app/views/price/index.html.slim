@@ -1,0 +1,14 @@
+h1 #MetaHash Price Checker
+
+= form_for @mhc, url: root_path, method: :GET, html: { class: 'price_form' } do
+  = label_tag(:mhc_action, "I want to")
+  = select("mhc", "action", PriceForm::ACTIONS)
+
+  = number_field(:mhc, :volume)
+
+  = label_tag(:mhc_for_currency, "MHC for")
+  = text_field :mhc, :for_currency, list: :currencies
+  datalist#currencies
+    = options_for_select PriceForm::CURRENCIES
+
+  = submit_tag("Check")
