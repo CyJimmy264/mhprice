@@ -20,5 +20,6 @@ module Mhprice
       "#{config.root}/app/forms/",
     ]
 
+    config.active_job.queue_adapter = :inline
   end
 end

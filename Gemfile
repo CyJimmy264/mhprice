@@ -30,7 +30,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # MHPrice requirements
 gem 'slim-rails'
-
+gem 'cryptoexchange', git: 'https://github.com/CyJimmy264/cryptoexchange', branch: 'my'
+gem 'whenever', require: false
 
 group :development, :test do
   gem 'pry-byebug'
